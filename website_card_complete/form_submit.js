@@ -10,7 +10,7 @@ function handleSubmit(event) {
     const subject = document.getElementById('id_sub').value;
     const message = document.getElementById('id_message').value;
     emailjs.init({
-        publicKey: "zt5n8xw4EvEOXZBJj"
+        publicKey: "public_key"
     });
     // Create the data object to send
     const templateParams = {
@@ -22,7 +22,7 @@ function handleSubmit(event) {
     };
 
     // Send the email via EmailJS
-    emailjs.send("service_3zbvpyl", "template_5f1wu2r", templateParams).then(function(response) {
+    emailjs.send("service", "template", templateParams).then(function(response) {
             console.log("SUCCESS!", response.status, response.text);
             alert("Your message has been sent successfully!");
         }, function(error) {
