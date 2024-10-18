@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left-nav">
+                <div class="logo">
+                    <img src="https://media.licdn.com/dms/image/D560BAQH0uQTwn0u9RA/company-logo_200_200/0/1694505471050/dumbways_id_logo?e=2147483647&v=beta&t=pvIPWnpRc4-52xOZ_4Nt5dJtCsc6iGlNMow1sAeydhw" alt="Logo">
+                </div>
+                <ul>
+                    <li><a href="web_card_navbar.html">Home</a></li>
+                    <li><a href="#">My Project</a></li>
+                </ul>
+            </div>
+            <a href="contact.html" class="contact-me">Contact Me</a> <!-- Far right contact button -->
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Form Section -->
+        <section class="form-section">
+            <h1>ADD MY PROJECT</h1>
+            <form id="projectForm">
+                <div class="form-group">
+                    <label for="projectName">Project Name</label>
+                    <input type="text" id="projectName" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="startDate">Start Date</label>
+                        <input type="date" id="startDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="endDate">End Date</label>
+                        <input type="date" id="endDate" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Technologies</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="nodejs" value="Node Js"> Node Js
+                        <input type="checkbox" id="nextjs" value="Next Js"> Next Js
+                        <input type="checkbox" id="reactjs" value="React Js"> React Js
+                        <input type="checkbox" id="typescript" value="TypeScript"> TypeScript
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="image">Upload Image</label>
+                    <input type="file" id="image" accept="image/*" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Projects Display Section -->
+        <section class="projects-section">
+            <h1>MY PROJECT</h1>
+            <div id="projectsContainer" class="projects-container">
+                <!-- Projects will be added here dynamically -->
+            </div>
+        </section>
+    </div>
+
+    <script src="blog.js"></script>
+</body>

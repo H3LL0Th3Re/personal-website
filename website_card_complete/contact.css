@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between; /*Ensures space between logo+links and contact button*/
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Left-side Navigation (Logo and Links) */
+nav .left-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between logo and navigation links */
+}
+
+/* Logo Styling */
+nav .logo img {
+    width: 50px; /* Adjust logo size */
+    height: 50px;
+}
+
+/* Navigation Links Styling */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Space between navigation links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Contact Me Button (Far Right) */
+nav .contact-me {
+    background-color: #ee5b0c;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.contact-form {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #e8ebed;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+}
+
+.contact-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, 
+.contact-form select, 
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: #2d3e50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #1c2734;
+}

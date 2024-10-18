@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+    <script type="module" src="form_submit.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "zt5n8xw4EvEOXZBJj"
+            });
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left-nav">
+                <div class="logo">
+                    <img src="https://media.licdn.com/dms/image/D560BAQH0uQTwn0u9RA/company-logo_200_200/0/1694505471050/dumbways_id_logo?e=2147483647&v=beta&t=pvIPWnpRc4-52xOZ_4Nt5dJtCsc6iGlNMow1sAeydhw" alt="Logo">
+                </div>
+                <ul>
+                    <li><a href="web_card_navbar.html">Home</a></li>
+                    <li><a href="blog.html">My Project</a></li>
+                </ul>
+            </div>
+            <a href="contact.html" class="contact-me">Contact Me</a> <!-- Far right contact button -->
+        </nav>
+    </header>
+
+    <div class="contact-form">
+        <h1>GET IN TOUCH</h1>
+        <form id="contactForm">
+            <input id="id_input" type="text" name="name" placeholder="Name" required>
+            <input id="id_email" type="email" name="email" placeholder="Email" required>
+            <input id="id_tel" type="tel" name="phone" placeholder="Phone Number" required>
+            <select id="id_sub" name="subject" required>
+                <option value="" disabled selected>Select Subject</option>
+                <option value="Fullstack">Fullstack</option>
+                <option value="Backend">Backend</option>
+                <option value="Frontend">Frontend</option>
+            </select>
+            <textarea id="id_message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" id="submit_button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

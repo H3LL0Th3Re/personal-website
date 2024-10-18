@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between; /*Ensures space between logo+links and contact button*/
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Left-side Navigation (Logo and Links) */
+nav .left-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between logo and navigation links */
+}
+
+/* Logo Styling */
+nav .logo img {
+    width: 50px; /* Adjust logo size */
+    height: 50px;
+}
+
+/* Navigation Links Styling */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Space between navigation links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Contact Me Button (Far Right) */
+nav .contact-me {
+    background-color: #ee5b0c;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-section, .projects-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    margin-top: 10px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button.edit, button.delete {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button.edit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button.delete {
+    background-color: #F44336;
+    color: white;
+}
